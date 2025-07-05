@@ -1,0 +1,18 @@
+@media screen and (min-width: 768px) {
+  .album {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem; /* optional spacing between images */
+  }
+
+  nav.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+  #menu {
+    display: none;
+  }
+}
