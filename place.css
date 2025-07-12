@@ -1,0 +1,56 @@
+/* Global Variables */
+:root {
+  --main-color: #004aad;
+  --accent-color: #ffc107;
+}
+
+/* Base Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--main-color);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: var(--accent-color);
+  color: black;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+h1::after {
+  content: " 🇰🇭";
+}
+
+@media (max-width: 600px) {
+  h1::after {
+    content: "";
+  }
+  
+  .mobile-icon {
+    display: block;
+    width: 48px;
+  }
+}
+
+@media (min-width: 601px) {
+  .mobile-icon {
+    display: none;
+  }
+}
