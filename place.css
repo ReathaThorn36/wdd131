@@ -1,10 +1,8 @@
-/* Global Variables */
 :root {
   --main-color: #004aad;
   --accent-color: #ffc107;
 }
 
-/* Base Styling */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--main-color);
@@ -27,13 +25,13 @@ header, footer {
 
 .visually-hidden {
   position: absolute;
-  left: -10000px;
-  top: auto;
+  left: -9999px;
   width: 1px;
   height: 1px;
   overflow: hidden;
 }
 
+/* Pseudo-element emoticon - desktop only */
 h1::after {
   content: " 🇰🇭";
 }
@@ -42,10 +40,10 @@ h1::after {
   h1::after {
     content: "";
   }
-  
+
   .mobile-icon {
     display: block;
-    width: 48px;
+    width: 40px;
   }
 }
 
