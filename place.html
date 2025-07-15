@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Cambodia</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Cambodia</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2 class="visually-hidden">Featured Image of Cambodia</h2> <!-- ✅ Heading for section -->
+      <img 
+        src="images/hero-small.webp"
+        srcset="images/hero-small.webp 600w, images/hero-large.webp 1200w"
+        sizes="(max-width: 600px) 600px, 1200px"
+        alt="Angkor Wat in Cambodia"
+        loading="lazy"
+      >
+    </section>
+
+    <section class="weather">
+      <h2 class="weather-heading">Weather</h2>
+      <div class="icon">
+        <img src="images/weather-icon.svg" alt="Cloudy icon">
+      </div>
+      <p>Temperature: <span id="temp">8</span>°C</p>
+      <p>Wind Speed: <span id="speed">10</span> km/h</p>
+      <p>Wind Chill: <span id="chill">--</span></p>
+    </section>
+
+    <section class="info">
+      <h2>About Cambodia</h2>
+      <p>Cambodia is a Southeast Asian country famous for its ancient temples, especially Angkor Wat, and its warm hospitality.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Reatha Thorn | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
