@@ -2,29 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="author" content="Reatha Thorn" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Explore temples around the world with dynamic filtering. Find temples by age or size." />
   <title>Filtered Temples</title>
   <link rel="stylesheet" href="styles/filtered-temples.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>Filtered Temples</h1>
     <nav>
+      <a href="filtered-temples.html">Home</a>
+      <a href="#templeContainer">Temples</a>
+      <a href="https://churchofjesuschrist.org" target="_blank">Church Site</a>
+      <a href="index.html">Main Site</a>
+      <a href="#footer">Footer</a>
+    </nav>
+    <div class="filters">
       <button onclick="filterTemples('old')">Old</button>
       <button onclick="filterTemples('new')">New</button>
       <button onclick="filterTemples('large')">Large</button>
       <button onclick="filterTemples('small')">Small</button>
       <button onclick="filterTemples('all')">Home</button>
-    </nav>
+    </div>
   </header>
 
   <main id="templeContainer" class="temple-grid"></main>
 
-  <footer>
+  <footer id="footer">
     <p>&copy; <span id="year"></span> Reatha Thorn | Last Modified: <span id="lastModified"></span></p>
   </footer>
 
-  <script src="scripts/filtered-temples.js"></script>
+  <script src="scripts/filtered-temples.js" defer></script>
 </body>
 </html>
