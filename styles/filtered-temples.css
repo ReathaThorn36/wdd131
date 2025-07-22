@@ -1,3 +1,12 @@
+/* Author: Reatha Thorn
+   Project: WDD131 - Filtered Temples Page
+   Date: July 2025
+*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
   background-color: #f0f4f8;
 }
@@ -37,6 +46,11 @@ nav button {
 nav button:hover {
   background-color: #f9cb40;
   color: black;
+  text-decoration: underline;
+}
+
+nav a:hover {
+  color: #f9cb40;
   text-decoration: underline;
 }
 
