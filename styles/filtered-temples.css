@@ -35,7 +35,9 @@ nav button {
 }
 
 nav button:hover {
-  background-color: #005fa3; /* :hover effect added */
+  background-color: #f9cb40;
+  color: black;
+  text-decoration: underline;
 }
 
 .temple-grid {
