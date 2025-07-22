@@ -1,8 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  background-color: #f0f4f8;
+}
+
+.temple-card {
+  transition: transform 0.2s ease;
+}
+
+.temple-card:hover {
+  transform: scale(1.02);
 }
 
 header {
@@ -40,12 +45,15 @@ nav button:hover {
   padding: 1rem;
 }
 
-.temple-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  background: #f9f9f9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.temple-card h2 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+.temple-card p {
+  margin: 0 0 1rem;
+  color: #555;
+  font-size: 0.95rem;
 }
 
 .temple-card img {
