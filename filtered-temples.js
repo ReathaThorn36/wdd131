@@ -1,4 +1,3 @@
-filterTemples("all");
 const temples = [
   {
     name: "Salt Lake Temple",
@@ -113,10 +112,4 @@ function filterTemples(filter) {
 
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
-document.querySelectorAll("nav button").forEach(button => {
-  button.addEventListener("click", () => {
-    const filter = button.dataset.filter;
-    filterTemples(filter);
-  });
-});
 filterTemples("all");
