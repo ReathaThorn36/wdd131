@@ -112,4 +112,12 @@ function filterTemples(filter) {
 
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
+
+document.querySelectorAll(".filters button").forEach(button => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter;
+    filterTemples(filter);
+  });
+});
+
 filterTemples("all");
