@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Reatha Thorn" />
+  <meta name="description" content="Product review form for fabric products at FabricCrafts." />
+  <title>FabricCrafts Product Review Form</title>
+  <link rel="stylesheet" href="styles/form.css" />
+</head>
+<body>
+  <header>
+    <h1>FabricCrafts Product Review Form</h1>
+    <p>We value your feedback on our fabric products!</p>
+  </header>
+
+  <main>
+    <form method="get" action="review.html" id="reviewForm" novalidate>
+      <!-- Product Name (select, dynamically populated) -->
+      <label for="productName">Product Name <span class="required">*</span></label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
+
+      <!-- Overall Rating (radio buttons 1-5) -->
+      <fieldset>
+        <legend>Overall Rating <span class="required">*</span></legend>
+        <label><input type="radio" name="rating" id="rating1" value="1" required> 1 ☆</label>
+        <label><input type="radio" name="rating" id="rating2" value="2"> 2 ☆☆</label>
+        <label><input type="radio" name="rating" id="rating3" value="3"> 3 ☆☆☆</label>
+        <label><input type="radio" name="rating" id="rating4" value="4"> 4 ☆☆☆☆</label>
+        <label><input type="radio" name="rating" id="rating5" value="5"> 5 ☆☆☆☆☆</label>
+      </fieldset>
+
+      <!-- Date of Installation -->
+      <label for="installDate">Date of Installation <span class="required">*</span></label>
+      <input type="date" id="installDate" name="installDate" required />
+
+      <!-- Useful Features (checkboxes) -->
+      <fieldset>
+        <legend>Useful Features</legend>
+        <label><input type="checkbox" id="featureDurability" name="features" value="Durability"> Durability</label>
+        <label><input type="checkbox" id="featureColor" name="features" value="Color"> Color</label>
+        <label><input type="checkbox" id="featureTexture" name="features" value="Texture"> Texture</label>
+        <label><input type="checkbox" id="featureWashability" name="features" value="Washability"> Washability</label>
+      </fieldset>
+
+      <!-- Written Review -->
+      <label for="reviewText">Written Review</label>
+      <textarea id="reviewText" name="reviewText" rows="5" placeholder="Write your review here..."></textarea>
+
+      <!-- User Name -->
+      <label for="userName">Your Name (optional)</label>
+      <input type="text" id="userName" name="userName" placeholder="Your name" />
+
+      <!-- Submit -->
+      <input type="submit" value="Submit Review" />
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FabricCrafts | Reatha Thorn</p>
+  </footer>
+
+  <script src="scripts/form.js"></script>
+</body>
+</html>

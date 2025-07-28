@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Reatha Thorn" />
+  <meta name="description" content="Product review submission confirmation page." />
+  <title>Review Submitted | FabricCrafts</title>
+  <link rel="stylesheet" href="styles/form.css" />
+</head>
+<body>
+  <header>
+    <h1>Thank You for Your Review!</h1>
+  </header>
+
+  <main>
+    <p>Your product review has been successfully submitted.</p>
+    <p id="reviewCountMessage"></p>
+    <p><a href="form.html">Submit Another Review</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FabricCrafts | Reatha Thorn</p>
+  </footer>
+
+  <script>
+    // Increase review count in localStorage
+    let count = localStorage.getItem('reviewCount');
+    count = count ? parseInt(count, 10) + 1 : 1;
+    localStorage.setItem('reviewCount', count);
+
+    // Display count message
+    const msg = document.getElementById('reviewCountMessage');
+    msg.textContent = `You have submitted ${count} review${count === 1 ? '' : 's'} so far.`;
+  </script>
+</body>
+</html>
