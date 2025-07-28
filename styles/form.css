@@ -1,3 +1,6 @@
+/* Google Font families applied */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+
 /* Base styles */
 body {
   font-family: 'Roboto', sans-serif;
