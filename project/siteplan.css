@@ -1,9 +1,9 @@
 /* Base styles */
 body {
+  background-color: #ffffff;
+  color: #222222; /* darker text for better contrast */
   font-family: 'Roboto', sans-serif;
-  background-color: #FFF9F0; /* Cream White */
-  color: #333;
-  margin: 0;
+  line-height: 1.6;
   padding: 1rem;
 }
 
@@ -11,7 +11,7 @@ body {
 header {
   text-align: center;
   padding: 1rem;
-  background-color: #E1A6AD; /* Soft Rose */
+  background-color: #A03D47; /* Darker rose */
   color: white;
 }
 
@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-  color: #B2535A; /* Darker rose for better contrast */
+  color: #732C30; /* Darker rose for better contrast */
   font-family: 'Playfair Display', serif;
 }
 
