@@ -3,76 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore our creative fabric crafts ideas and projects for all skill levels." />
   <meta name="author" content="Reatha Thorn" />
-  <title>Fabric Crafts Projects</title>
-  <link rel="stylesheet" href="../styles/form.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-    }
-
-    header, footer {
-      background-color: #8a4baf;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    main {
-      padding: 2rem;
-    }
-
-    h1 {
-      color: #5a3e85;
-    }
-
-    .card {
-      background: white;
-      padding: 1rem;
-      margin: 1rem 0;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .card img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-  </style>
+  <meta name="description" content="FabricCrafts Product Showcase and Review Page" />
+  <title>FabricCrafts Project</title>
+  <link rel="stylesheet" href="styles/form.css" />
 </head>
 <body>
   <header>
-    <h1>Fabric Crafts Projects</h1>
-    <p>Creative Ideas & Tutorials for Fabric Lovers</p>
+    <h1>FabricCrafts</h1>
+    <nav>
+      <a href="/wdd131/index.html">Home</a>
+      <a href="form.html">Review Form</a>
+      <a href="project.html">Project</a>
+    </nav>
   </header>
-
   <main>
     <section class="card">
-      <h2>Easy DIY Fabric Flowers</h2>
-      <img src="../images/fabric-flowers.jpg" alt="DIY fabric flowers" loading="lazy">
-      <p>Learn how to make beautiful fabric flowers with just a few scraps. Perfect for gifts, headbands, and decorations.</p>
+      <h2>Handmade Fabric Product</h2>
+      <img src="images/fabric-product.jpg" alt="Handmade Fabric Product" loading="lazy" width="400" height="300">
+      <p>This unique product was crafted using high-quality fabric and thoughtful design techniques.</p>
     </section>
-
     <section class="card">
-      <h2>No-Sew Fabric Coasters</h2>
-      <img src="../images/fabric-coasters.jpg" alt="Handmade fabric coasters" loading="lazy">
-      <p>Create quick and colorful fabric coasters using glue instead of stitching. Great for beginners!</p>
-    </section>
-
-    <section class="card">
-      <h2>Recycled T-shirt Tote Bag</h2>
-      <img src="../images/tshirt-tote.jpg" alt="Tote bag made from old t-shirt" loading="lazy">
-      <p>Turn old t-shirts into reusable tote bags. A fun upcycling project for all ages.</p>
+      <h2>Customer Reviews</h2>
+      <ul>
+        <li>"Absolutely love the quality!" - Maria</li>
+        <li>"Beautiful and well-made." - John</li>
+        <li>"Will buy again!" - Sopheak</li>
+      </ul>
     </section>
   </main>
-
   <footer>
-    <p>&copy; 2025 Reatha Thorn | WDD 131 Fabric Crafts Project</p>
+    <p>&copy; <span id="year"></span> | FabricCrafts | Reatha Thorn</p>
   </footer>
+  <script>
+    // Auto update current year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
