@@ -1,0 +1,38 @@
+/* Basic reset and layout */
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; margin:0; line-height:1.5; color:#222; }
+.wrap { max-width:1000px; margin:0 auto; padding:1rem; }
+.site-header { background:#0b3d3b; color:#fff; }
+.site-header .wrap { display:flex; align-items:center; justify-content:space-between; }
+.site-header h1 { margin:0; font-size:1.25rem; }
+nav a { color:#fff; text-decoration:none; margin-left:1rem; }
+nav a:hover, nav a:focus { text-decoration:underline; outline:2px solid rgba(255,255,255,0.15); border-radius:4px; }
+
+.hero { padding:2rem 0; }
+.hero h2 { margin-top:0; }
+.cta { margin-top:0.5rem; }
+.cta input { padding:0.5rem; margin-right:0.5rem; }
+
+.features { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1rem; }
+.features article { background:#f7f7f7; padding:1rem; border-radius:6px; }
+
+.gallery { margin-top:1rem; display:flex; gap:0.5rem; flex-wrap:wrap; }
+.gallery img { width:calc(33% - 0.5rem); height:auto; border-radius:6px; }
+
+footer { background:#f0f0f0; padding:1rem 0; margin-top:2rem; }
+.footer-inner { display:flex; justify-content:space-between; align-items:center; }
+
+/* Responsive adjustments */
+@media (max-width:700px) {
+  .site-header .wrap { flex-direction:column; align-items:flex-start; gap:0.5rem; }
+  .features { grid-template-columns:1fr; }
+  .gallery img { width:100%; }
+  nav a { margin-left:0; margin-right:1rem; }
+}
+
+/* Form styles */
+form { display:flex; flex-direction:column; gap:0.5rem; max-width:600px; }
+label { font-weight:600; }
+input, textarea { padding:0.5rem; border:1px solid #ccc; border-radius:4px; }
+button { padding:0.6rem 1rem; border:none; background:#0b3d3b; color:#fff; border-radius:6px; cursor:pointer; }
+button:hover { opacity:0.9; }
